@@ -1,25 +1,9 @@
-use std::str::Bytes;
+use std::env;
+use std::fs;
 
-enum TokenType {
-    SET
-}
-
-struct Token {
-    t_type: TokenType,
-    val: String,
-}
-
-fn lex(inp: Bytes) -> Vec<Token> {
-    let out: Vec<Token> = Vec::new();
-    let idx: i32 = 0;
-
-    while idx < inp.len() {
-        
-    }
-
-    return out;
-}
+mod lexer;
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
     println!("Hello, world!");
 }
